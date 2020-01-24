@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+# Removes annoying OSX files from compressed files.
+#
+# $1 - filename
+#
+# Examples
+#
+#   zip-strip archive.zip
+
+zip -d "$1" "__MACOSX*"
