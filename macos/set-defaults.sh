@@ -1,7 +1,5 @@
 #!/bin/sh
-# Sets reasonable macOS defaults.
-#
-# Or, in other words, set shit how I like in macOS.
+# Sets macOS defaults.
 #
 # The original idea (and a couple settings) were grabbed from:
 #   https://github.com/mathiasbynens/dotfiles/blob/master/.osx
@@ -28,8 +26,6 @@ test -z "$TRAVIS_JOB_ID" && sudo -v
 
 echo ""
 echo "› System:"
-echo "  › Disable press-and-hold for keys in favor of key repeat"
-defaults write -g ApplePressAndHoldEnabled -bool false
 
 echo "  › Use AirDrop over every interface"
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
@@ -77,6 +73,9 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 echo "  › Set up trackpad & mouse speed to a reasonable number"
 defaults write -g com.apple.trackpad.scaling 2
 defaults write -g com.apple.mouse.scaling 2.5
+
+echo "  › Set scroll direction to unnatural"
+defaults write -g com.apple.swipescrolldirection -bool FALSE
 
 echo "  › Avoid the creation of .DS_Store files on network volumes"
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
@@ -132,9 +131,6 @@ defaults write com.apple.finder ShowPathbar -bool true
 echo "  › Disable the warning before emptying the Trash"
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
-echo "  › Save to disk by default, instead of iCloud"
-defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
-
 echo "  › Display full POSIX path as Finder window title"
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
@@ -180,9 +176,6 @@ echo "  › Remove the auto-hiding Dock delay"
 defaults write com.apple.dock autohide-delay -float 0
 echo "  › Remove the animation when hiding/showing the Dock"
 defaults write com.apple.dock autohide-time-modifier -float 0
-
-echo "  › Automatically hide and show the Dock"
-defaults write com.apple.dock autohide -bool true
 
 echo "  › Don't animate opening applications from the Dock"
 defaults write com.apple.dock launchanim -bool false
