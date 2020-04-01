@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 mkdir -p "$HOME/.docker/completions"
 
 if command -v docker-compose >/dev/null 2>&1; then

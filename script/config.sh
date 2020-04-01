@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/usr/bin/env bash
 #
-# bootstrap installs things.
+# Install or refresh configurations.
 
 cd "$(dirname "$0")/.."
 DOTFILES_ROOT=$(pwd -P)

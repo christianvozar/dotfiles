@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 if command -v code >/dev/null; then
 	if [ "$(uname -s)" = "Darwin" ]; then
 		VSCODE_HOME="$HOME/Library/Application Support/Code"

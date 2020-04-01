@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/usr/bin/env bash
 #
-# Removes annoying OSX files from compressed files.
+# zip-strip removes macOS files from compressed files.
 #
 # $1 - filename
 #

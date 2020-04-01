@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 #
 # Nukes a branch or tag locally and on the origin remote.
 #

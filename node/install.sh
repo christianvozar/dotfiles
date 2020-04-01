@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 if command -v node >/dev/null 2>&1; then
 	brew install node
 else
