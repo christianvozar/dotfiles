@@ -16,3 +16,9 @@ is_installed () {
 		return 1
 	fi
 }
+
+# install eksctl
+# brew tap weaveworks/tap
+# brew install weaveworks/tap/eksctl
+# Upgrade ekcstl
+# brew upgrade eksctl && brew link --overwrite eksctl
