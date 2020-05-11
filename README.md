@@ -13,7 +13,7 @@ There are a lot of Dotfile repositories out there. Ideally, you would fork anoth
 
 ### Clone Repository
 
-1. `$ git clone https://github.com/caarlos0/dotfiles.git ~/.dotfiles`
+1. `$ git clone https://github.com/christianvozar/dotfiles.git ~/.dotfiles`
 
 ### Software
 
