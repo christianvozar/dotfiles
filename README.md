@@ -11,6 +11,10 @@ There are a lot of Dotfile repositories out there. Ideally, you would fork anoth
 
 ## Installation
 
+### Clone Repository
+
+1. `$ git clone https://github.com/caarlos0/dotfiles.git ~/.dotfiles`
+
 ### Software
 
 1. Verify Base Dependencies. `$ make dependencies`
