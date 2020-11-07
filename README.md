@@ -22,7 +22,7 @@ There are a lot of Dotfile repositories out there. Ideally, you would fork anoth
 
 ### Configure
 
-1. Refresh configurations for installed softare. `$ script/bootstrap.sh`
+1. Refresh configurations for installed softare. `$ script/config.sh`
 
 ### (Optional) Configure macOS
 
