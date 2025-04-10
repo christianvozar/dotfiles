@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-(cd "$(brew --repo)" && git prune && git gc)
-brew cleanup
-rm -rf "$(brew --cache)"
