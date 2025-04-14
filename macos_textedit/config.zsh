@@ -12,7 +12,7 @@ log_error() {
     echo "[ERROR] $1" >&2
 }
 
-log_info "Configuring TextEdit settings ::"
+log_info "Configuring macOS TextEdit"
 
 # Set TextEdit RichText to 0 (as an integer value)
 defaults write com.apple.TextEdit RichText -int 0
